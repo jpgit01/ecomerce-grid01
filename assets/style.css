@@ -1,11 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1,h2,h3,p{
+  margin: 2%;
+  font-family: 'Roboto', sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
-}
-.container {
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: auto 100vh auto;
   grid-template-areas:
     "header header"
     "asside-bar main"
@@ -14,15 +19,15 @@ body {
 .navbar {
   grid-area: header;
   text-align: center;
-  background-color: aqua;
-  height: 100px;
+  background-color: green;
+  color: white;
 }
 .grid {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 300px);
-  gap: 10% 2%;
+  gap: 20% 1%;
 }
 .item {
   display: flex;
@@ -30,29 +35,31 @@ body {
   align-items: center;
 
 }
-.footer {
-  grid-area: footer;
-  background-color: red;
-  text-align: center;
-  height: 60px;
-}
 .asside-bar{
   display: flex;
   flex-direction: column;
   padding: 5%;
-  margin-top: 70px;
+}
+.pie {
+  grid-area: footer;
+  background-color: green;
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
 }
 ul{
   list-style: none;
 }
 img{
-  width: 80%;
+  width: 70%;
+  height: 100%;
   padding: 5%;
 }
-h1,h3,p{
-  margin: 2%;
-}
-main{
-  margin-top: 70px;
-  margin-bottom: 100px;
+button{
+  width: 80%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  margin-top: 20px;
+  border: none;
 }
